@@ -15,6 +15,10 @@
 		D9C163B41BAE255F0080ADE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C163B21BAE255F0080ADE9 /* LaunchScreen.storyboard */; };
 		D9C163BF1BAE255F0080ADE9 /* ThreeMatchOnSpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C163BE1BAE255F0080ADE9 /* ThreeMatchOnSpriteTests.swift */; };
 		D9C163CA1BAE255F0080ADE9 /* ThreeMatchOnSpriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C163C91BAE255F0080ADE9 /* ThreeMatchOnSpriteUITests.swift */; };
+		D9C163D81BAE31DC0080ADE9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C163D71BAE31DC0080ADE9 /* Item.swift */; settings = {ASSET_TAGS = (); }; };
+		D9C163DA1BAE32620080ADE9 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C163D91BAE32620080ADE9 /* Point.swift */; settings = {ASSET_TAGS = (); }; };
+		D9C163DC1BAE37620080ADE9 /* Board2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C163DB1BAE37620080ADE9 /* Board2D.swift */; settings = {ASSET_TAGS = (); }; };
+		D9C163DE1BAE828F0080ADE9 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C163DD1BAE828F0080ADE9 /* Level.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D9C163C51BAE255F0080ADE9 /* ThreeMatchOnSpriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeMatchOnSpriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C163C91BAE255F0080ADE9 /* ThreeMatchOnSpriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMatchOnSpriteUITests.swift; sourceTree = "<group>"; };
 		D9C163CB1BAE255F0080ADE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C163D71BAE31DC0080ADE9 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D9C163D91BAE32620080ADE9 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		D9C163DB1BAE37620080ADE9 /* Board2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board2D.swift; sourceTree = "<group>"; };
+		D9C163DD1BAE828F0080ADE9 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				D9C163B01BAE255F0080ADE9 /* Assets.xcassets */,
 				D9C163B21BAE255F0080ADE9 /* LaunchScreen.storyboard */,
 				D9C163B51BAE255F0080ADE9 /* Info.plist */,
+				D9C163D71BAE31DC0080ADE9 /* Item.swift */,
+				D9C163D91BAE32620080ADE9 /* Point.swift */,
+				D9C163DB1BAE37620080ADE9 /* Board2D.swift */,
+				D9C163DD1BAE828F0080ADE9 /* Level.swift */,
 			);
 			path = ThreeMatchOnSprite;
 			sourceTree = "<group>";
@@ -258,8 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C163D81BAE31DC0080ADE9 /* Item.swift in Sources */,
+				D9C163DE1BAE828F0080ADE9 /* Level.swift in Sources */,
+				D9C163DA1BAE32620080ADE9 /* Point.swift in Sources */,
 				D9C163AA1BAE255F0080ADE9 /* GameScene.swift in Sources */,
 				D9C163AC1BAE255F0080ADE9 /* GameViewController.swift in Sources */,
+				D9C163DC1BAE37620080ADE9 /* Board2D.swift in Sources */,
 				D9C163A61BAE255F0080ADE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
