@@ -14,15 +14,15 @@ let rows = 9
 class Level {
     private var itemBoard = Board2D<Item>.init(columns: columns, rows: rows)
     
-    func ItemAtPoint(point:Point) -> Item?{
-        assertPoint(point)
-        return itemBoard[point]
+    func ItemAtPoint(column:Int, row:Int) -> Item?{
+        assertPoint(column, row:row)
+        return itemBoard[column, row]
     }
     
     //check if the point is valid
-    func assertPoint(point:Point){
-        assert(point.row >= 0 && point.row < rows)
-        assert(point.column >= 0 && point.column < columns)
+    func assertPoint(column:Int, row:Int){
+        assert(row >= 0 && row < rows)
+        assert(column >= 0 && column < columns)
     }
     
     //init the board
@@ -32,8 +32,7 @@ class Level {
                 let itemType = ItemType.randomItem();
                 
                 let item = Item.init(column: column, row: row, itemType: itemType)
-                let point = Point.init(column: column, row: row)
-                itemBoard[point] = item
+                itemBoard[column, row] = item
             }
         }
     }

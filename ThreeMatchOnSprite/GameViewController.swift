@@ -11,7 +11,8 @@ import SpriteKit
 
 class GameViewController: UIViewController {
     var scene: GameScene!
-
+    var level: Level!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,8 +27,13 @@ class GameViewController: UIViewController {
         /* Set the scale mode to scale to fit the window */
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .AspectFill
-            
+        
         skView.presentScene(scene)
+        
+        level = Level()
+        scene.level = level
+        
+        beginGame()
     }
 
     override func shouldAutorotate() -> Bool {
@@ -49,5 +55,10 @@ class GameViewController: UIViewController {
 
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func beginGame(){
+        level.createBoard()
+        scene.addSpritesForItems()
     }
 }

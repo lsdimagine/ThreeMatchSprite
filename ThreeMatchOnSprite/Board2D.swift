@@ -22,13 +22,13 @@ class Board2D<T> {
         array = Array<T?>(count: columns*rows, repeatedValue: nil)
     }
     
-    subscript(point:Point) -> T?{
+    subscript(column:Int, row:Int) -> T?{
         set {
-            array[point.row * self.columns + point.column] = newValue
+            array[row * self.columns + column] = newValue
         }
         
         get {
-            return array[point.row*self.columns + point.column]
+            return array[row*self.columns + column]
         }
     }
     

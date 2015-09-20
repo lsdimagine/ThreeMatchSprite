@@ -24,19 +24,22 @@ enum ItemType:Int{
 }
 
 class Item {
-    var location:Point
+    var column, row:Int
     //item type can not be changed
     let itemType:ItemType
     var spriteNode:SKSpriteNode?
     
     init(column:Int, row:Int, itemType:ItemType){
-        self.location = Point.init(column: column, row: row)
+        self.column = column
+        self.row = row
         self.itemType = itemType
     }
     
     //get relevant sprite
-    func getSprite() -> SKSpriteNode {
+    func getSprite() -> SKSpriteNode? {
         let sprite = SKSpriteNode(imageNamed: itemType.itemName)
+        sprite.size = CGSizeMake(tileWidth, tileHeight)
+        self.spriteNode = sprite
         return sprite
     }
 }
